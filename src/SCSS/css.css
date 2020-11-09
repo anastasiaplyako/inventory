@@ -1,0 +1,105 @@
+.block {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  display: flex;
+  height: 100vh;
+  font-family: "KingsCaslon Normal", Arial, sans-serif;
+}
+.block h1 {
+  color: #010f2a;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.place {
+  background: #efefef;
+  outline: none;
+  color: #010f2a;
+  box-sizing: border-box;
+  width: 30%;
+}
+.place__item li, .place ul {
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+button {
+  height: 30px;
+  border: none;
+}
+
+.inventory {
+  margin: 0 30px;
+  box-sizing: border-box;
+  width: 70%;
+}
+.inventory__block {
+  display: flex;
+}
+.inventory__block_name {
+  width: 80%;
+  height: 30px;
+}
+.inventory__block_value {
+  width: 20%;
+  height: 30px;
+  border: 1px solid gray;
+}
+.inventory__form input {
+  width: 100%;
+  margin: 10px 0;
+}
+.inventory__form_add {
+  background: #97233f;
+  color: white;
+  border: none;
+  height: 30px;
+}
+.inventory__info {
+  display: flex;
+  height: 50px;
+}
+.inventory__info__name {
+  width: 55%;
+}
+.inventory__info__count {
+  margin-right: 0;
+  width: 45%;
+}
+.inventory__info__count_close {
+  background: white;
+}
+.inventory__info__count_update {
+  color: white;
+  background: #97233f;
+}
+
+input {
+  height: 25px;
+  border: 1px solid gray;
+}
+
+@media screen and (max-width: 848px) {
+  .block {
+    display: block;
+    width: 100%;
+  }
+
+  .place, .inventory {
+    width: 100vw;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 551px) {
+  .inventory__info {
+    display: block;
+  }
+  .inventory__info__name, .inventory__info__count {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.css.map */
